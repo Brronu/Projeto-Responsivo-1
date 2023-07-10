@@ -1,0 +1,175 @@
+*{margin:0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    text-decoration: none;
+    outline: none;}
+
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 'cabecalho'
+                         'principal'
+                         'rodape';
+height: 100vh;
+                         
+}
+
+/* HEADER */
+header{grid-area: cabecalho;
+background-color: #ff6b81;
+color: #ffffff;
+}
+
+.cabecalho_ini{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.logo_ini{
+    width: 50px;
+    margin-left: 60px;
+}
+
+.cabecalho_titulo{
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.cabecalho_botao{
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background-color: #ff6b81;
+    color:#fff;
+    padding: 15px;
+    margin-right: 50px;
+}
+
+.cabecalho_botao:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #ff6b81;
+    transition: all 0.3 linear;
+}
+
+.cabecalho2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecalho_div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 100px;
+    padding: 10px;
+}
+.cabecalho2_titulo{
+    font-size: 50px;
+}
+
+.cabecalho2_subtitulo{
+    font-size: 10px;
+}
+
+.cabecalho2_botao{
+    display: flex;
+    gap: 30px;
+}
+
+.botao1{
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: #ffffff;
+    color: #ff6b81;
+    padding: 20px;
+    margin-right: 50px;
+    width: 180px;
+    height: 60px;
+    font-size: large;
+}
+
+.botao2{
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: #ff6b81;
+    color: #ffffff;
+    padding: 20px;
+    margin-right: 50px;
+    width: 180px;
+    height: 60px;
+    font-size: large;
+}
+
+.botao1:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color:#ff6b81;
+    transition: all 0.3 linear;
+}
+
+.botao2:hover{
+    cursor: pointer;
+    transition: all 0.3 linear;
+}
+
+/* MAIN */
+main{grid-area: principal;
+    background-color: #fff;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 30px;
+    margin-top: 30px;
+    margin: 15px 650px 30px;
+    text-align: center;
+}
+
+.caract{
+    color: #ff6b81;
+    padding: auto;
+    margin-bottom: 20px;
+}
+
+.texto1, .texto2{
+    padding: 10px;
+}
+
+.texto2{
+    color: gray;
+}
+
+.conteudos_blocos{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: start;
+    row-gap: 20px;
+}
+
+.bloco1{
+    background-color: #ff6b81;
+    border-radius: 7px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.bloco1 > h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.bloco1{
+    color: #fff;
+}
