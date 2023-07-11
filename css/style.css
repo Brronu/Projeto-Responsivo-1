@@ -304,7 +304,9 @@ div > h3{
        
         
     }
-
+    .bloco1{
+        width: 300px;
+ }
     .conteudo_principal{
         padding: 70px;
         margin: 0 auto;
